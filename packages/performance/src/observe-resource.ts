@@ -1,4 +1,4 @@
-export default function observeLCP() {
+export function observeResource() {
   const perfObsCb: PerformanceObserverCallback = (list) => {
     if (observer) {
       observer.disconnect();
@@ -19,5 +19,5 @@ export default function observeLCP() {
   };
 
   const observer = new PerformanceObserver(perfObsCb);
-  observer.observe({ type: "largest-contentful-paint", buffered: true });
+  observer.observe({ type: "resource", buffered: true });
 }

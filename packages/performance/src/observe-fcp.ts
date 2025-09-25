@@ -7,11 +7,13 @@ export default function observeFCP() {
         const reportData = {
           ...jsonObj,
           type: "performance",
-          subType: entry.name,
           pageUrl: window.location.href,
+          name: entry.name,
+          duration: entry.duration,
+          startTime: entry.startTime,
         };
 
-        console.log(reportData)
+        console.log(reportData);
       }
     }
   };
