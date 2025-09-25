@@ -2,12 +2,19 @@
   "name": "@fe-250923/performance",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": "true",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.15.1"
+  "packageManager": "pnpm@10.15.1",
+  "type": "module",
+  "devDependencies": {
+    "eslint": "~9.36.0",
+    "@eslint/js": "~9.36.0",
+    "typescript": "~5.9.2",
+    "typescript-eslint": "~8.44.1"
+  }
 }
