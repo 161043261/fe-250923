@@ -11,6 +11,7 @@ export function observeResource() {
         pageUrl: window.location.href,
         name: entry.name,
         duration: entry.duration,
+        entryType: entry.entryType,
         startTime: entry.startTime,
       };
 
